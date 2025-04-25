@@ -1,0 +1,159 @@
+#root {
+  border: solid 30px blue;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f33131;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px 0px;
+  margin: 200px;
+  margin-top: 90px;
+}
+
+
+.card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 230px;
+  height: 160px;
+  padding-top: 60px;
+  background-color: rgb(1, 60, 255);
+  border-radius: 12px;
+  box-shadow: 3px 3px 0px 1px rgb(0 0 0);
+  text-align: center;
+  overflow: visible;
+  transition: scale 0.5s;
+  cursor: pointer;
+}
+
+.card-name {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.card-id {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  color: aliceblue;
+  right: 30px;
+  position: absolute;
+}
+
+.card:hover {
+  scale: 1.05;
+  transform: rotate(360deg)
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.card-image img {
+  width: 200px;
+  height: 200px;
+}
+
+.footer {
+  bottom: 0px;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(45, 45, 45);
+}
+
+.footer p {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: aliceblue;
+}
+
+.detalle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  /* o ajustá a 90% si querés más grande */
+  height: 55%;
+  /* opcional, según cuánto querés mostrar */
+  background-color: rgb(1, 60, 255);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.card-image-detalle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0px;
+}
+
+.card-image-detalle img {
+  width: 350px;
+  height: 350px;
+}
+
+.detalle button {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: red;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.pokemon-info {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-around;
+}
+
+
+.stats p {
+  font-family: fantasy;
+  font-size: 14px;
+}
+
+.id-detalle{
+  bottom: 0;
+  left: 13px;
+  position: fixed;
+  font-size: 25px;
+  font-family: fantasy;
+  color: rgb(255, 255, 255);
+}
